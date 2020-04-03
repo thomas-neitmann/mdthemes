@@ -16,7 +16,7 @@ The package is currently only available from GitHub.
 if (!"remotes" %in% installed.packages()) {
   install.packages("remotes")
 }
-remotes::install_github("thomas-neitmann/ggcharts", upgrade = "never")
+remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")
 ```
 
 ## Usage

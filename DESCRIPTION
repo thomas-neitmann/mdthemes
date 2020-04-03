@@ -5,8 +5,12 @@ Authors@R:
     person("Thomas", "Neitmann", role = c("aut", "cre"), email = "th.neitmann@gmail.com")
 Description: What the package does (one paragraph).
 Imports:
+    hrbrthemes,
     ggplot2,
-    ggtext
+    ggtext,
+    ggthemes
+Suggests:
+    glue
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

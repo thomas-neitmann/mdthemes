@@ -70,10 +70,10 @@ md_theme_tufte(...)
 md_theme_wsj(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresposponding \code{ggplot2} theme}
+\item{...}{Arguments passed on to the corresponding \code{ggplot2} theme}
 }
 \value{
-An object fo class \code{theme} that can be added to any \code{ggplot}
+An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
 ggthemes themes supporting markdown syntax

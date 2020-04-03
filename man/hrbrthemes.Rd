@@ -22,10 +22,10 @@ md_theme_ipsum_tw(...)
 md_theme_modern_rc(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresposponding \code{ggplot2} theme}
+\item{...}{Arguments passed on to the corresponding \code{ggplot2} theme}
 }
 \value{
-An object fo class \code{theme} that can be added to any \code{ggplot}
+An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
 hrbrthemes themes supporting markdown syntax

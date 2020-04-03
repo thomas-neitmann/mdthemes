@@ -2,9 +2,9 @@
 #'
 #' ggplot2 themes supporting markdown syntax
 #'
-#' @param ... Arguments passed on to the corresposponding \code{ggplot2} theme
+#' @param ... Arguments passed on to the corresponding \code{ggplot2} theme
 #'
-#' @return An object fo class \code{theme} that can be added to any \code{ggplot}
+#' @return An object of class \code{theme} that can be added to any \code{ggplot}
 #'
 #' @rdname ggplot2_themes
 #' @export

@@ -28,10 +28,10 @@ md_theme_minimal(...)
 md_theme_classic(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresposponding \code{ggplot2} theme}
+\item{...}{Arguments passed on to the corresponding \code{ggplot2} theme}
 }
 \value{
-An object fo class \code{theme} that can be added to any \code{ggplot}
+An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
 ggplot2 themes supporting markdown syntax

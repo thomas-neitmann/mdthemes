@@ -21,7 +21,7 @@ remotes::install_github("thomas-neitmann/ggcharts", upgrade = "never")
 Usage
 -----
 
-Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes` and `hrbrthemes` with support for renderng text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
+Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes` and `hrbrthemes` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
 
 ``` r
 library(ggplot2)

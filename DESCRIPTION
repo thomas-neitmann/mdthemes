@@ -3,7 +3,7 @@ Title: Markdown Themes for 'ggplot2'
 Version: 0.0.0.9000
 Authors@R: 
     person("Thomas", "Neitmann", role = c("aut", "cre"), email = "th.neitmann@gmail.com")
-Description: What the package does (one paragraph).
+Description: Provides 'ggplot2' themes that render text as markdown.
 Imports:
     hrbrthemes,
     ggplot2,

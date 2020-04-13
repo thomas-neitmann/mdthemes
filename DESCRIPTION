@@ -8,7 +8,8 @@ Imports:
     hrbrthemes,
     ggplot2,
     ggtext,
-    ggthemes
+    ggthemes,
+    tvthemes
 Suggests:
     glue
 License: MIT + file LICENSE

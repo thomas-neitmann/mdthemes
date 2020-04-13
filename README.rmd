@@ -3,6 +3,11 @@ title: "mdthemes"
 output: github_document
 ---
 
+<!-- badges: start -->
+[![R build status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
+<!-- badges: end -->
+
+
 ## Overview
 
 `mdthemes` adds support for rendering text as markdown to your favorite `ggplot2` themes thanks to the awesome `ggtext` package.

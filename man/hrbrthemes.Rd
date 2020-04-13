@@ -46,6 +46,6 @@ p <- ggplot(mtcars, aes(hp, mpg)) +
 p
 
 # By adding an 'md' theme the text is rendered properly
-p + md_theme_ipsum()
+p + md_theme_ipsum("sans")
 
 }

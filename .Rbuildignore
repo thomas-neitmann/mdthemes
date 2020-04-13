@@ -1,3 +1,5 @@
 ^mdthemes\.Rproj$
 ^\.Rproj\.user$
 ^\.github$
+^README.rmd$
+^README_files$

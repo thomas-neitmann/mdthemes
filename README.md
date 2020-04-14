@@ -43,16 +43,16 @@ p <- ggplot(mtcars, aes(hp, mpg)) +
 p
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](man/figures/README-examples-1.png)
 
 ``` r
 p + md_theme_gray()
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-2.png)
+![](man/figures/README-examples-2.png)
 
 ``` r
 p + md_theme_economist()
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-3.png)
+![](man/figures/README-examples-3.png)

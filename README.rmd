@@ -3,6 +3,12 @@ title: "mdthemes"
 output: github_document
 ---
 
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  fig.path = "man/figures/README-"
+)
+```
+
 [![R build status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
 
 ## Overview
@@ -25,7 +31,7 @@ remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")
 
 Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes` and `hrbrthemes` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
 
-```{r, message=FALSE, warning=FALSE}
+```{r examples, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(mdthemes)
 data(mtcars)

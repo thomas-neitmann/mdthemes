@@ -43,7 +43,7 @@ jobs:
           key: ${{ runner.os }}-r-${{ matrix.config.r }}-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-r-${{ matrix.config.r }}-
 
-      - name: Install system dependencies
+      - name: Install Linux system dependencies
         if: runner.os == 'Linux'
         env:
           RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
@@ -51,6 +51,11 @@ jobs:
           Rscript -e "remotes::install_github('r-hub/sysreqs')"
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
           sudo -s eval "$sysreqs"
+
+      - name: Install macOS system dependencies
+        if: runner.os == 'macOS'
+        run: |
+          brew cask install xquartz
 
       - name: Install dependencies
         run: |

@@ -3,9 +3,7 @@ title: "mdthemes"
 output: github_document
 ---
 
-<!-- badges: start -->
 [![R build status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
-<!-- badges: end -->
 
 ## Overview
 

@@ -1,6 +1,8 @@
 mdthemes
 ================
 
+[![R build status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
+
 Overview
 --------
 

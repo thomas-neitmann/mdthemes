@@ -5,6 +5,7 @@ Authors@R:
     person("Thomas", "Neitmann", role = c("aut", "cre"), email = "th.neitmann@gmail.com")
 Description: Provides 'ggplot2' themes that render text as markdown.
 Imports:
+    cowplot,
     hrbrthemes,
     ggplot2,
     ggtext,

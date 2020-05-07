@@ -5,6 +5,7 @@ Authors@R:
     person("Thomas", "Neitmann", role = c("aut", "cre"), email = "th.neitmann@gmail.com")
 Description: Provides 'ggplot2' themes that render text as markdown.
 Imports:
+    cowplot,
     hrbrthemes,
     ggplot2,
     ggtext,
@@ -17,4 +18,4 @@ Encoding: UTF-8
 LazyData: true
 remotes:
     wilkelab/ggtext
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0

@@ -104,7 +104,7 @@ md_theme_igray <- function(...) {
 
 #' @rdname ggthemes
 #' @export
-md_theme_map <- function(...) {
+md_theme_map_gg <- function(...) {
   as_md_theme(ggthemes::theme_map(...))
 }
 

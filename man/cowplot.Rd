@@ -3,7 +3,7 @@
 \name{md_theme_cowplot}
 \alias{md_theme_cowplot}
 \alias{md_theme_half_open}
-\alias{md_theme_map}
+\alias{md_theme_map_cow}
 \alias{md_theme_minimal_grid}
 \alias{md_theme_minimal_hgrid}
 \alias{md_theme_minimal_vgrid}
@@ -14,7 +14,7 @@ md_theme_cowplot(...)
 
 md_theme_half_open(...)
 
-md_theme_map(...)
+md_theme_map_cow(...)
 
 md_theme_minimal_grid(...)
 

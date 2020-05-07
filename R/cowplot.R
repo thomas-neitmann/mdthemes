@@ -38,7 +38,7 @@ md_theme_half_open <- function(...) {
 
 #' @rdname cowplot
 #' @export
-md_theme_map <- function(...) {
+md_theme_map_cow <- function(...) {
   as_md_theme(cowplot::theme_map(...))
 }
 

@@ -14,7 +14,7 @@
 \alias{md_theme_gdocs}
 \alias{md_theme_hc}
 \alias{md_theme_igray}
-\alias{md_theme_map}
+\alias{md_theme_map_gg}
 \alias{md_theme_pander}
 \alias{md_theme_par}
 \alias{md_theme_solarized}
@@ -51,7 +51,7 @@ md_theme_hc(...)
 
 md_theme_igray(...)
 
-md_theme_map(...)
+md_theme_map_gg(...)
 
 md_theme_pander(...)
 

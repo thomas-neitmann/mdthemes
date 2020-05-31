@@ -1,8 +1,15 @@
 new_md_themes <- function(pkg) {
-  outfile <- paste0("R/", pkg, ".R")
+  stopifnot(
+    is.character(pkg),
+    length(pkg) == 1L,
+    pkg %in% utils::installed.packages()
+  )
+  is_loaded <- pkg %in% loadedNamespaces()
+  is_attached <- pkg %in% search()
   library(pkg, character.only = TRUE)
-  themes <- ls(paste0("package:", pkg), pattern = "theme_")
 
+  outfile <- paste0("R/", pkg, ".R")
+  themes <- ls(paste0("package:", pkg), pattern = "theme_")
   for (theme in themes) {
     string <- glue::glue(
       "#' @rdname <<pkg>>",
@@ -17,4 +24,9 @@ new_md_themes <- function(pkg) {
     cat(string, file = outfile, append = TRUE)
   }
 
+  if (!is_attached) {
+    detach(paste0("package:", pkg), unload = !is_loaded)
+  } else if (!is_loaded) {
+    unloadNamespace(asNamespace(pkg))
+  }
 }

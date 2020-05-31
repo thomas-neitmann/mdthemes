@@ -4,9 +4,11 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Thomas", "Neitmann", role = c("aut", "cre"), email = "th.neitmann@gmail.com")
 Description: Provides 'ggplot2' themes that render text as markdown.
+Depends:
+     R (>= 3.2)
 Imports:
     hrbrthemes,
-    ggplot2,
+    ggplot2 (>= 3.3.0),
     ggtext,
     ggthemes,
     tvthemes

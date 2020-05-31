@@ -28,13 +28,13 @@ md_theme_minimal(...)
 md_theme_classic(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresponding \code{ggplot2} theme}
+\item{...}{Arguments passed on to the corresponding theme in package \code{{ggplot2}}}
 }
 \value{
 An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
-ggplot2 themes supporting markdown syntax
+\code{{ggplot2}} themes supporting markdown syntax
 }
 \examples{
 library(ggplot2)
@@ -54,4 +54,7 @@ p
 # By adding an 'md' theme the text is rendered properly
 p + md_theme_gray()
 
+}
+\seealso{
+\code{\link[=as_md_theme]{as_md_theme()}}
 }

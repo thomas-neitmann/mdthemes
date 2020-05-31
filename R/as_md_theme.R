@@ -1,9 +1,9 @@
-#' Turn a usual theme into a markdown theme
+#' Turn a Usual Theme into a Markdown Theme
 #'
-#' Transform any \code{ggplot2} theme into a theme that renders text as markdown
+#' Transform any `{ggplot2}` theme into a theme that renders text as markdown
 #'
-#' @param theme An object of class \code{theme}
-#' @param all_plain \code{logical}. Should all text be plain by default?
+#' @param theme An object of class `theme`
+#' @param all_plain `logical`. Should all text be plain by default?
 #'
 #' @examples
 #' library(ggplot2)

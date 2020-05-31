@@ -25,13 +25,13 @@ md_theme_minimal_vgrid(...)
 md_theme_nothing(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresponding \code{cowplot} theme}
+\item{...}{Arguments passed on to the corresponding theme in package \code{{cowplot}}}
 }
 \value{
 An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
-cowplot themes supporting markdown syntax
+\code{{cowplot}} themes supporting markdown syntax
 }
 \examples{
 library(ggplot2)
@@ -51,4 +51,7 @@ p
 # By adding an 'md' theme the text is rendered properly
 p + md_theme_minimal_grid()
 
+}
+\seealso{
+\code{\link[=as_md_theme]{as_md_theme()}}
 }

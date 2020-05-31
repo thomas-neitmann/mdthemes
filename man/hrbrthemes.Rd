@@ -22,13 +22,13 @@ md_theme_ipsum_tw(...)
 md_theme_modern_rc(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresponding \code{ggplot2} theme}
+\item{...}{Arguments passed on to the corresponding theme in package \code{{hrbrthemes}}}
 }
 \value{
 An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
-hrbrthemes themes supporting markdown syntax
+\code{{hrbrthemes}} themes supporting markdown syntax
 }
 \examples{
 library(ggplot2)
@@ -48,4 +48,7 @@ p
 # By adding an 'md' theme the text is rendered properly
 p + md_theme_ipsum("sans")
 
+}
+\seealso{
+\code{\link[=as_md_theme]{as_md_theme()}}
 }

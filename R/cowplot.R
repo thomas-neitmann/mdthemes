@@ -1,10 +1,12 @@
 #' cowplot Markdown Themes
 #'
-#' cowplot themes supporting markdown syntax
+#' `{cowplot}` themes supporting markdown syntax
 #'
-#' @param ... Arguments passed on to the corresponding \code{cowplot} theme
+#' @param ... Arguments passed on to the corresponding theme in package `{cowplot}`
 #'
-#' @return An object of class \code{theme} that can be added to any \code{ggplot}
+#' @return An object of class `theme` that can be added to any `ggplot`
+#'
+#' @seealso [as_md_theme()]
 #'
 #' @examples
 #' library(ggplot2)

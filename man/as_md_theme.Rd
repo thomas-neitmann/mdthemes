@@ -2,7 +2,7 @@
 % Please edit documentation in R/as_md_theme.R
 \name{as_md_theme}
 \alias{as_md_theme}
-\title{Turn a usual theme into a markdown theme}
+\title{Turn a Usual Theme into a Markdown Theme}
 \usage{
 as_md_theme(theme, all_plain = TRUE)
 }
@@ -12,7 +12,7 @@ as_md_theme(theme, all_plain = TRUE)
 \item{all_plain}{\code{logical}. Should all text be plain by default?}
 }
 \description{
-Transform any \code{ggplot2} theme into a theme that renders text as markdown
+Transform any \code{{ggplot2}} theme into a theme that renders text as markdown
 }
 \examples{
 library(ggplot2)

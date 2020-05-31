@@ -1,10 +1,12 @@
 #' ggthemes Markdown Themes
 #'
-#' ggthemes themes supporting markdown syntax
+#' `{ggthemes}` themes supporting markdown syntax
 #'
-#' @param ... Arguments passed on to the corresponding \code{ggplot2} theme
+#' @param ... Arguments passed on to the corresponding theme in package `{ggthemes}`
 #'
-#' @return An object of class \code{theme} that can be added to any \code{ggplot}
+#' @return An object of class `theme` that can be added to any `ggplot`
+#'
+#' @seealso [as_md_theme()]
 #'
 #' @examples
 #' library(ggplot2)

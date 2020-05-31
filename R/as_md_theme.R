@@ -34,11 +34,19 @@ as_md_theme <- function(theme, all_plain = TRUE) {
   }
   theme +
     ggplot2::theme(
+      axis.title = emd,
+      axis.title.x = emd,
+      axis.title.y = emd,
+      axis.text = emd,
+      axis.text.x = emd,
+      axis.text.y = emd,
+      legend.text = emd,
+      legend.title = emd,
       plot.title = emd,
       plot.subtitle = emd,
       plot.caption = emd,
-      axis.title = emd,
-      axis.title.x = emd,
-      axis.title.y = emd
+      strip.text = emd,
+      strip.text.x = emd,
+      strip.text.y = emd
     )
 }

@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-`mdthemes` adds support for rendering text as markdown to your favorite `ggplot2` themes thanks to the awesome `ggtext` package.
+`{mdthemes}` adds support for rendering text as markdown to your favorite `{ggplot2}` themes thanks to the awesome `{ggtext}` package.
 
 
 ## Installation
@@ -31,7 +31,7 @@ remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")
 
 ## Usage
 
-Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes`, `hrbrthemes`, `tvthemes` and `cowplot` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
+Currently, `{mdthemes}` contains all themes from `{ggplot2}`, `{ggthemes}`, `{hrbrthemes}`, `{tvthemes}` and `{cowplot}` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
 
 ```{r examples, message=FALSE, warning=FALSE, fig.show='hold', out.width='50%'}
 library(ggplot2)

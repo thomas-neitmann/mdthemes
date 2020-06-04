@@ -1,15 +1,15 @@
 mdthemes
 ================
 
-[![R build status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
+[![R build
+status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
 
-Overview
---------
+## Overview
 
-`mdthemes` adds support for rendering text as markdown to your favorite `ggplot2` themes thanks to the awesome `ggtext` package.
+`{mdthemes}` adds support for rendering text as markdown to your
+favorite `{ggplot2}` themes thanks to the awesome `{ggtext}` package.
 
-Installation
-------------
+## Installation
 
 The package is currently only available from GitHub.
 
@@ -20,10 +20,12 @@ if (!"remotes" %in% installed.packages()) {
 remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")
 ```
 
-Usage
------
+## Usage
 
-Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes`, `hrbrthemes`, `tvthemes` and `cowplot` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
+Currently, `{mdthemes}` contains all themes from `{ggplot2}`,
+`{ggthemes}`, `{hrbrthemes}`, `{tvthemes}` and `{cowplot}` with support
+for rendering text as markdown. All themes start with `md_` followed by
+the name of the original theme, e.g. `md_theme_bw()`.
 
 ``` r
 library(ggplot2)

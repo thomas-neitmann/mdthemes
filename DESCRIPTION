@@ -2,7 +2,7 @@ Package: mdthemes
 Title: Markdown Themes for 'ggplot2'
 Version: 0.1.0
 Authors@R: 
-    person("Thomas", "Neitmann", role = c("aut", "cre"), email = "th.neitmann@gmail.com")
+    person("Thomas", "Neitmann", role = c("aut", "cre", "cph"), email = "th.neitmann@gmail.com")
 Description: A collection of 'ggplot2' themes that render text as markdown/HTML.
 Depends:
      R (>= 3.2)

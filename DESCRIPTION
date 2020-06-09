@@ -7,7 +7,7 @@ Description: A collection of 'ggplot2' themes that render text as markdown/HTML.
     the creation of complex formatted plot labels, e.g. titles with indiviudal words highlighted
     in different colors.
 Depends:
-     R (>= 3.2)
+     R (>= 3.5)
 Imports:
     cowplot,
     hrbrthemes,

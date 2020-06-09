@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^\.github$
 ^README.rmd$
+^R/new_md_themes.R$
+^inst/gallery_thumbnail.R$

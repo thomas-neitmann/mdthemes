@@ -5,6 +5,8 @@
 #' @param theme An object of class `theme`
 #' @param all_plain `logical`. Should all text be plain by default?
 #'
+#' @return An object of class `theme` that can be added to any `ggplot`
+#'
 #' @examples
 #' library(ggplot2)
 #' data(mtcars)

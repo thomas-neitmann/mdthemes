@@ -11,6 +11,9 @@ as_md_theme(theme, all_plain = TRUE)
 
 \item{all_plain}{\code{logical}. Should all text be plain by default?}
 }
+\value{
+An object of class \code{theme} that can be added to any \code{ggplot}
+}
 \description{
 Transform any \code{{ggplot2}} theme into a theme that renders text as markdown
 }

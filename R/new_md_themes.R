@@ -2,7 +2,7 @@ new_md_themes <- function(pkg) {
   stopifnot(
     is.character(pkg),
     length(pkg) == 1L,
-    pkg %in% utils::installed.packages()
+    requireNamespace(pkg)
   )
   is_loaded <- pkg %in% loadedNamespaces()
   is_attached <- pkg %in% search()

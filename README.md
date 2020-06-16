@@ -3,6 +3,12 @@ mdthemes
 
 [![R build
 status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
+[![CRAN
+Version](https://www.r-pkg.org/badges/version/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
+[![Total
+Downloads](http://cranlogs.r-pkg.org/badges/grand-total/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
+[![Lifecycle
+Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 ## Overview
 

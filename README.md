@@ -60,3 +60,9 @@ p + md_theme_fivethirtyeight()
 ```
 
 <img src="man/figures/README-examples_cont-1.png" width="50%" /><img src="man/figures/README-examples_cont-2.png" width="50%" />
+
+## Going further
+
+To learn more about `{mdthemes}` check out [this blog
+post](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
+accompanying the first CRAN release.

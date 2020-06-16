@@ -61,3 +61,8 @@ p + md_theme_minimal()
 p + ggthemes::theme_fivethirtyeight()
 p + md_theme_fivethirtyeight()
 ```
+
+
+## Going further
+
+To learn more about `{mdthemes}` check out [this blog post](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/) accompanying the first CRAN release.

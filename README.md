@@ -11,10 +11,17 @@ favorite `{ggplot2}` themes thanks to the awesome `{ggtext}` package.
 
 ## Installation
 
-The package is currently only available from GitHub.
+The package is available from CRAN.
 
 ``` r
-if (!"remotes" %in% installed.packages()) {
+install.packages("mdthemes")
+```
+
+Alternatively, you can install the latest development version from
+GitHub.
+
+``` r
+if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
 remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")

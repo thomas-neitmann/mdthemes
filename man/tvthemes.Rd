@@ -13,7 +13,7 @@
 \alias{md_theme_simpsons}
 \alias{md_theme_spongeBob}
 \alias{md_theme_theLastAirbender}
-\title{ggthemes Markdown Themes}
+\title{tvthemes Markdown Themes}
 \usage{
 md_theme_avatar(...)
 
@@ -40,11 +40,33 @@ md_theme_spongeBob(...)
 md_theme_theLastAirbender(...)
 }
 \arguments{
-\item{...}{Arguments passed on to the corresponding \code{ggplot2} theme}
+\item{...}{Arguments passed on to the corresponding theme in package \code{{tvthemes}}}
 }
 \value{
 An object of class \code{theme} that can be added to any \code{ggplot}
 }
 \description{
-ggthemes themes supporting markdown syntax
+\code{{tvthemes}} themes supporting markdown syntax
+}
+\examples{
+library(ggplot2)
+data(mtcars)
+
+p <- ggplot(mtcars, aes(hp, mpg)) +
+  geom_point() +
+  labs(
+    title = "A **bold** title",
+    subtitle = "An *italics* subtitle",
+    caption = "A <span style = 'color:blue'>blue</span> caption"
+  )
+
+# With a 'usual' theme the text is not rendered
+p
+
+# By adding an 'md' theme the text is rendered properly
+p + md_theme_simpsons()
+
+}
+\seealso{
+\code{\link[=as_md_theme]{as_md_theme()}}
 }

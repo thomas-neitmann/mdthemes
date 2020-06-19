@@ -3,32 +3,46 @@ title: "mdthemes"
 output: github_document
 ---
 
-<!-- badges: start -->
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  fig.path = "man/figures/README-"
+)
+```
+
 [![R build status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
-<!-- badges: end -->
+[![CRAN Version](https://www.r-pkg.org/badges/version/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
+[![Total Downloads](http://cranlogs.r-pkg.org/badges/grand-total/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
+[![Lifecycle Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 
 ## Overview
 
-`mdthemes` adds support for rendering text as markdown to your favorite `ggplot2` themes thanks to the awesome `ggtext` package.
+`{mdthemes}` adds support for rendering text as markdown to your favorite `{ggplot2}` themes thanks to the awesome `{ggtext}` package.
 
 
 ## Installation
 
-The package is currently only available from GitHub.
+The package is available from CRAN.
 
 ```r
-if (!"remotes" %in% installed.packages()) {
+install.packages("mdthemes")
+```
+
+Alternatively, you can install the latest development version from GitHub.
+
+```r
+if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
 remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")
 ```
 
+
 ## Usage
 
-Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes` and `hrbrthemes` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
+Currently, `{mdthemes}` contains all themes from `{ggplot2}`, `{ggthemes}`, `{hrbrthemes}`, `{tvthemes}` and `{cowplot}` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
 
-```{r, message=FALSE, warning=FALSE}
+```{r examples, message=FALSE, warning=FALSE, fig.show='hold', out.width='50%'}
 library(ggplot2)
 library(mdthemes)
 data(mtcars)
@@ -42,12 +56,16 @@ p <- ggplot(mtcars, aes(hp, mpg)) +
     caption = "<span style = 'color:blue'>A blue caption</span>"
   )
 
-# Without support for markdown rendering
-p
-
-p + md_theme_gray()
-
-p + md_theme_economist()
-
+p + theme_minimal()
+p + md_theme_minimal()
 ```
 
+```{r examples_cont, fig.show='hold', out.width='50%'}
+p + ggthemes::theme_fivethirtyeight()
+p + md_theme_fivethirtyeight()
+```
+
+
+## Going further
+
+To learn more about `{mdthemes}` check out [this blog post](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/) accompanying the first CRAN release.

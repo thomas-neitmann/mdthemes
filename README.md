@@ -1,27 +1,44 @@
 mdthemes
 ================
 
-Overview
---------
+[![R build
+status](https://github.com/thomas-neitmann/mdthemes/workflows/R-CMD-check/badge.svg)](https://github.com/thomas-neitmann/mdthemes/actions)
+[![CRAN
+Version](https://www.r-pkg.org/badges/version/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
+[![Total
+Downloads](http://cranlogs.r-pkg.org/badges/grand-total/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
+[![Lifecycle
+Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-`mdthemes` adds support for rendering text as markdown to your favorite `ggplot2` themes thanks to the awesome `ggtext` package.
+## Overview
 
-Installation
-------------
+`{mdthemes}` adds support for rendering text as markdown to your
+favorite `{ggplot2}` themes thanks to the awesome `{ggtext}` package.
 
-The package is currently only available from GitHub.
+## Installation
+
+The package is available from CRAN.
 
 ``` r
-if (!"remotes" %in% installed.packages()) {
+install.packages("mdthemes")
+```
+
+Alternatively, you can install the latest development version from
+GitHub.
+
+``` r
+if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
 remotes::install_github("thomas-neitmann/mdthemes", upgrade = "never")
 ```
 
-Usage
------
+## Usage
 
-Currently, `mdthemes` contains all themes from `ggplot2`, `ggthemes` and `hrbrthemes` with support for rendering text as markdown. All themes start with `md_` followed by the name of the original theme, e.g. `md_theme_bw()`.
+Currently, `{mdthemes}` contains all themes from `{ggplot2}`,
+`{ggthemes}`, `{hrbrthemes}`, `{tvthemes}` and `{cowplot}` with support
+for rendering text as markdown. All themes start with `md_` followed by
+the name of the original theme, e.g. `md_theme_bw()`.
 
 ``` r
 library(ggplot2)
@@ -37,20 +54,21 @@ p <- ggplot(mtcars, aes(hp, mpg)) +
     caption = "<span style = 'color:blue'>A blue caption</span>"
   )
 
-# Without support for markdown rendering
-p
+p + theme_minimal()
+p + md_theme_minimal()
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
+<img src="man/figures/README-examples-1.png" width="50%" /><img src="man/figures/README-examples-2.png" width="50%" />
 
 ``` r
-p + md_theme_gray()
+p + ggthemes::theme_fivethirtyeight()
+p + md_theme_fivethirtyeight()
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-2.png)
+<img src="man/figures/README-examples_cont-1.png" width="50%" /><img src="man/figures/README-examples_cont-2.png" width="50%" />
 
-``` r
-p + md_theme_economist()
-```
+## Going further
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-3.png)
+To learn more about `{mdthemes}` check out [this blog
+post](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
+accompanying the first CRAN release.

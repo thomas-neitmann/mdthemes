@@ -1,10 +1,30 @@
 #' hrbrthemes Markdown Themes
 #'
-#' hrbrthemes themes supporting markdown syntax
+#' `{hrbrthemes}` themes supporting markdown syntax
 #'
-#' @param ... Arguments passed on to the corresponding \code{ggplot2} theme
+#' @param ... Arguments passed on to the corresponding theme in package `{hrbrthemes}`
 #'
-#' @return An object of class \code{theme} that can be added to any \code{ggplot}
+#' @return An object of class `theme` that can be added to any `ggplot`
+#'
+#' @seealso [as_md_theme()]
+#'
+#' @examples
+#' library(ggplot2)
+#' data(mtcars)
+#'
+#' p <- ggplot(mtcars, aes(hp, mpg)) +
+#'   geom_point() +
+#'   labs(
+#'     title = "A **bold** title",
+#'     subtitle = "An *italics* subtitle",
+#'     caption = "A <span style = 'color:blue'>blue</span> caption"
+#'   )
+#'
+#' # With a 'usual' theme the text is not rendered
+#' p
+#'
+#' # By adding an 'md' theme the text is rendered properly
+#' p + md_theme_ipsum("sans")
 #'
 #' @rdname hrbrthemes
 #' @export

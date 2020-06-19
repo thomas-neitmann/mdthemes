@@ -12,11 +12,10 @@ Imports:
     cowplot,
     hrbrthemes,
     ggplot2 (>= 3.3.0),
+    glue,
     ggtext,
     ggthemes,
     tvthemes
-Suggests:
-    glue
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

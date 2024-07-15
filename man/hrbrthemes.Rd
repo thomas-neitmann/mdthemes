@@ -5,7 +5,6 @@
 \alias{md_theme_ipsum}
 \alias{md_theme_ipsum_ps}
 \alias{md_theme_ipsum_rc}
-\alias{md_theme_ipsum_tw}
 \alias{md_theme_modern_rc}
 \title{hrbrthemes Markdown Themes}
 \usage{
@@ -16,8 +15,6 @@ md_theme_ipsum(...)
 md_theme_ipsum_ps(...)
 
 md_theme_ipsum_rc(...)
-
-md_theme_ipsum_tw(...)
 
 md_theme_modern_rc(...)
 }

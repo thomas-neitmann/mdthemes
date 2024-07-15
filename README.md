@@ -8,7 +8,7 @@ Version](https://www.r-pkg.org/badges/version/mdthemes?color=green)](https://cra
 [![Total
 Downloads](http://cranlogs.r-pkg.org/badges/grand-total/mdthemes?color=green)](https://cran.r-project.org/package=mdthemes)
 [![Lifecycle
-Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 
 ## Overview
 

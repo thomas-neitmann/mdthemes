@@ -52,12 +52,6 @@ md_theme_ipsum_rc <- function(...) {
 
 #' @rdname hrbrthemes
 #' @export
-md_theme_ipsum_tw <- function(...) {
-  as_md_theme(hrbrthemes::theme_ipsum_tw(...))
-}
-
-#' @rdname hrbrthemes
-#' @export
 md_theme_modern_rc <- function(...) {
   as_md_theme(hrbrthemes::theme_modern_rc(...))
 }

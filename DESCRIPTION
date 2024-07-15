@@ -1,24 +1,30 @@
 Package: mdthemes
 Title: Markdown Themes for 'ggplot2'
-Version: 0.1.0.9000
+Version: 1.0.0
 Authors@R: 
-    person("Thomas", "Neitmann", role = c("aut", "cre", "cph"), email = "r-pkgs@thomasadventure.blog")
-Description: A collection of 'ggplot2' themes that render text as markdown/HTML. This enables
-    the creation of complex formatted plot labels, e.g. titles with individual words highlighted
-    in different colors.
+    person("Thomas", "Neitmann", , "r-pkgs@thomasadventure.blog", role = c("aut", "cre", "cph"))
+Description: A collection of 'ggplot2' themes that render text as
+    markdown/HTML. This enables the creation of complex formatted plot
+    labels, e.g. titles with individual words highlighted in different
+    colors.
+License: MIT + file LICENSE
+URL: https://github.com/thomas-neitmann/mdthemes,
+    https://thomas-neitmann.github.io/mdthemes/
+BugReports: https://github.com/thomas-neitmann/mdthemes/issues
 Depends:
-     R (>= 3.5)
+    R (>= 3.5)
 Imports:
     cowplot,
-    hrbrthemes,
     ggplot2 (>= 3.3.0),
     ggtext,
     ggthemes,
+    hrbrthemes,
     tvthemes
 Suggests:
-    glue
-License: MIT + file LICENSE
+    glue,
+    testthat (>= 3.0.0)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
